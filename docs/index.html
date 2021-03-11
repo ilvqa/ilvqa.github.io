@@ -6,17 +6,17 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Learning Task Decomposition with Order-Memory Policy Network | Yuchen Lu, Yikang Shen, Siyuan Zhou, Aaron Courville, Joshua B. Tenenbaum, Chuang Gan</title>
+<title>Iterated learning for emergent systematicity in VQA | Ankit Vani, Max Schwarzer, Yuchen Lu, Eeshan Dhekane, Aaron Courville</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Learning Task Decomposition with Order-Memory Policy Network" />
+<meta property="og:title" content="Iterated learning for emergent systematicity in VQA" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Yuchen Lu, Yikang Shen, Siyuan Zhou, Aaron Courville, Joshua B. Tenenbaum, Chuang Gan" />
-<meta property="og:description" content="Yuchen Lu, Yikang Shen, Siyuan Zhou, Aaron Courville, Joshua B. Tenenbaum, Chuang Gan" />
-<meta property="og:site_name" content="Learning Task Decomposition with Order-Memory Policy Network" />
+<meta name="description" content="Ankit Vani, Max Schwarzer, Yuchen Lu, Eeshan Dhekane, Aaron Courville" />
+<meta property="og:description" content="Ankit Vani, Max Schwarzer, Yuchen Lu, Eeshan Dhekane, Aaron Courville" />
+<meta property="og:site_name" content="Iterated learning for emergent systematicity in VQA" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Learning Task Decomposition with Order-Memory Policy Network" />
+<meta property="twitter:title" content="Iterated learning for emergent systematicity in VQA" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"/","headline":"Learning Task Decomposition with Order-Memory Policy Network","description":"Yuchen Lu, Yikang Shen, Siyuan Zhou, Aaron Courville, Joshua B. Tenenbaum, Chuang Gan","name":"Learning Task Decomposition with Order-Memory Policy Network","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"/","headline":"Iterated learning for emergent systematicity in VQA","description":"Ankit Vani, Max Schwarzer, Yuchen Lu, Eeshan Dhekane, Aaron Courville","name":"Iterated learning for emergent systematicity in VQA","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,32 +30,18 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Learning Task Decomposition with Order-Memory Policy Network</h1>
-      <h2 class="project-tagline">Yuchen Lu, Yikang Shen, Siyuan Zhou, Aaron Courville, Joshua B. Tenenbaum, Chuang Gan</h2>
+      <h1 class="project-name">Iterated learning for emergent systematicity in VQA</h1>
+      <h2 class="project-tagline">Ankit Vani, Max Schwarzer, Yuchen Lu, Eeshan Dhekane, Aaron Courville</h2>
       
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="abstract">Abstract</h1>
-<p>Many complex real-world tasks are composed of several levels of sub-tasks.
-Humans leverage these hierarchical structures to accelerate the learning process andachieve better generalization.
-In this work, we study the inductive bias and propose Ordered Memory Policy Network (OMPN) to discover subtask hierarchy by learning from demonstration.
-The discovered subtask hierarchy could  be  used to perform task decomposition, recovering the subtask boundaries.
-Experiments on Craft and Dial demonstrate that our model can achieve higher task decomposition performance under both unsupervised andweakly supervised settings, comparing with strong baselines. OMPN can also be directly applied to partially observable environments and still achieve higher task decomposition performance.
-Our visualization further confirms that the subtaskhierarchy can emerge in our model</p>
+      <h2 id="abstract">Abstract</h2>
+<p>Although neural module networks have an architectural bias towards compositionality, they require gold standard layouts to generalize systematically in practice. When instead learning layouts and modules jointly, compositionality does not arise automatically and an explicit pressure is necessary for the emergence of layouts exhibiting the right structure. We propose to address this problem using iterated learning, a cognitive science theory of the emergence of compositional languages in nature that has primarily been applied to simple referential games in machine learning. Considering the layouts of module networks as samples from an emergent language, we use iterated learning to encourage the development of structure within this language. We show that the resulting layouts support systematic generalization in neural agents solving the more complex task of visual question-answering. Our regularized iterated learning method can outperform baselines without iterated learning on <strong>SHAPES-SyGeT</strong> (<strong>SHAPES</strong> <strong>Sy</strong>stematic <strong>Ge</strong>neralization <strong>T</strong>est), a new split of the SHAPES dataset we introduce to evaluate systematic generalization, and on CLOSURE, an extension of CLEVR also designed to test systematic generalization. We demonstrate superior performance in recovering ground-truth compositional program structure with limited supervision on both SHAPES-SyGeT and CLEVR.</p>
 
-<h1 id="method">Method</h1>
-<p><img src="assets/example.jpg" alt="subtasks" /></p>
-
-<h1 id="demo-craft">Demo (Craft)</h1>
-<p><img src="assets/craft.gif" alt="subtasks" /></p>
-
-<h1 id="demo-dial">Demo (Dial)</h1>
-<p><img src="assets/dial.gif" alt="subtasks" /></p>
-
-<h1 id="demo-kitchen">Demo (Kitchen)</h1>
-<p><img src="assets/kitchen.gif" alt="subtasks" /></p>
+<h2 id="method">Method</h2>
+<p><img src="assets/arch.png" alt="arch" /></p>
 
 
       <footer class="site-footer">

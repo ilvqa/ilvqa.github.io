@@ -2,23 +2,8 @@
 layout: default
 ---
 
-# Abstract
-Many complex real-world tasks are composed of several levels of sub-tasks.
-Humans leverage these hierarchical structures to accelerate the learning process andachieve better generalization.
-In this work, we study the inductive bias and propose Ordered Memory Policy Network (OMPN) to discover subtask hierarchy by learning from demonstration.
-The discovered subtask hierarchy could  be  used to perform task decomposition, recovering the subtask boundaries.
-Experiments on Craft and Dial demonstrate that our model can achieve higher task decomposition performance under both unsupervised andweakly supervised settings, comparing with strong baselines. OMPN can also be directly applied to partially observable environments and still achieve higher task decomposition performance.
-Our visualization further confirms that the subtaskhierarchy can emerge in our model
+## Abstract
+Although neural module networks have an architectural bias towards compositionality, they require gold standard layouts to generalize systematically in practice. When instead learning layouts and modules jointly, compositionality does not arise automatically and an explicit pressure is necessary for the emergence of layouts exhibiting the right structure. We propose to address this problem using iterated learning, a cognitive science theory of the emergence of compositional languages in nature that has primarily been applied to simple referential games in machine learning. Considering the layouts of module networks as samples from an emergent language, we use iterated learning to encourage the development of structure within this language. We show that the resulting layouts support systematic generalization in neural agents solving the more complex task of visual question-answering. Our regularized iterated learning method can outperform baselines without iterated learning on **SHAPES-SyGeT** (**SHAPES** **Sy**stematic **Ge**neralization **T**est), a new split of the SHAPES dataset we introduce to evaluate systematic generalization, and on CLOSURE, an extension of CLEVR also designed to test systematic generalization. We demonstrate superior performance in recovering ground-truth compositional program structure with limited supervision on both SHAPES-SyGeT and CLEVR.
 
-# Method
-![subtasks](assets/example.jpg)
-
-
-# Demo (Craft)
-![subtasks](assets/craft.gif)
-
-# Demo (Dial)
-![subtasks](assets/dial.gif)
-
-# Demo (Kitchen)
-![subtasks](assets/kitchen.gif)
+## Method
+![arch](assets/arch.png)
